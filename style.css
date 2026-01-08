@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* =====================
+   GLOBAL STYLES
+===================== */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: radial-gradient(circle at top, #2b0a3d, #12001a);
+    color: #e6d9ff;
+}
+
+/* =====================
+   NAVIGATION BAR
+===================== */
+nav {
+    background: linear-gradient(90deg, #6a0dad, #9b30ff);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ff66ff;
+    position: relative;
+    z-index: 5;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+}
+
+/* =====================
+   MAIN CONTENT CARD
+===================== */
+.content {
+    padding: 40px;
+    margin: 40px auto;
+    width: 80%;
+    background: rgba(40, 0, 70, 0.85);
+    border: 3px solid #b266ff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9b30ff, inset 0 0 10px #4b0082;
+    position: relative;
+    z-index: 5;
+}
+
+/* =====================
+   RETRO CRAB DECORATION
+===================== */
+.crab {
+    position: fixed;
+    width: 48px;
+    height: auto;
+    image-rendering: pixelated;
+    z-index: 1;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 6px #b266ff);
+    pointer-events: none;
+}
+
+/* =====================
+   CORNER POSITIONS
+   (ALL FACE CENTER)
+===================== */
+.top-left {
+    top: 80px;
+    left: 20px;
+    transform: rotate(20deg);
+}
+
+.top-right {
+    top: 80px;
+    right: 20px;
+    transform: scaleX(-1) rotate(20deg);
+}
+
+.bottom-left {
+    bottom: 30px;
+    left: 20px;
+    transform: rotate(270deg);
+}
+
+.bottom-right {
+    bottom: 30px;
+    right: 20px;
+    transform: scaleX(-1) rotate(120deg);
+}
+
+/* =====================
+   TEXT STYLES
+===================== */
+h1 {
+    color: #ff66ff;
+    text-shadow: 2px 2px #000, 0 0 8px #ff66ff;
+    margin-bottom: 25px;
+}
+
+p, li {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* =====================
+   FOOTER (OPTIONAL)
+===================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 10px;
+    color: #caa0ff;
+}
+
+/* =====================
+   MOBILE SAFETY
+===================== */
+@media (max-width: 768px) {
+    .crab {
+        display: none;
+    }
+}
