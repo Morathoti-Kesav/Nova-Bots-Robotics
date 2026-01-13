@@ -4,6 +4,56 @@
 <meta charset="UTF-8">
 <title>My Website | Contact</title>
 <link rel="stylesheet" href="style.css">
+<style>
+    body {
+    color: #502a96;
+  }
+    .contact-info {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background: #0056b3;
+}
+
+</style>
 </head>
 <body>
     <img src="crab.png" class="crab top-left">
@@ -14,19 +64,40 @@
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="projects.html">Projects</a>
-<a href="Events.html">Events</a>
+<a href="events.html">Events</a>
 <a href="teams.html">Team</a>
 <a href="news.html">News</a>
 <a href="achievement.html">Achievements</a>
 <a href="contact.html">Contact</a>
 </nav>
 
-
 <section class="content">
-<h1>Contact Us</h1>
-<p>Email: example@email.com</p>
-<p>Phone: +91-XXXXXXXXXX</p>
-</section>
-</body>
+  <h1>Contact Us</h1>
+  <p>Have questions or want to collaborate with us? Get in touch using the details below or send us a message.</p>
 
+  <div class="contact-info">
+    <p><strong>Email:</strong> roboticsclub@example.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> Robotics Lab, XYZ Institute of Technology, India</p>
+  </div>
+
+  <h2>Send Us a Message</h2>
+  <form class="contact-form">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+</body>
 </html>
