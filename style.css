@@ -8,6 +8,10 @@ body {
     font-family: 'Press Start 2P', cursive;
     background: radial-gradient(circle at top, #2b0a3d, #12001a);
     color: #e6d9ff;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 /* =====================
@@ -38,6 +42,23 @@ nav a:hover {
 /* =====================
    MAIN CONTENT CARD
 ===================== */
+.logo {
+    margin: 2rem auto 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    background-color: #004248;
+}
+.robo {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 350px;
+    left: 20px;
+    image-rendering: pixelated;
+    z-index: 3;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 6px #b4b7b8);
+}
 .content {
     padding: 40px;
     margin: 40px auto;
@@ -49,6 +70,12 @@ nav a:hover {
     position: relative;
     z-index: 5;
 }
+.revalia-regular {
+  font-family: "Revalia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* =====================
    RETRO CRAB DECORATION
@@ -120,11 +147,57 @@ footer {
     color: #caa0ff;
 }
 
+#heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-size: 50px;
+    animation: glow 2s infinite;
+}
+#subheading{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#content{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#box-data{
+    position: absolute;
+    right: 5rem;
+    border: 2px solid #b266ff;
+    padding: 20px;
+    margin: 40px auto;
+    width: 60%;
+    background: rgba(60, 0, 90, 0.655);
+    border-radius: 12px;
+    /* box-shadow: 0 0 15px #9b30ff, inset 0 0 10px #4b0082; */
+   
+}
+.section-content{
+    position: relative;
+    width: 100%;
+}
+
 /* =====================
    MOBILE SAFETY
 ===================== */
 @media (max-width: 768px) {
     .crab {
         display: none;
+    }
+}
+@keyframes glow {
+    0%{
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #a40000, 0 0 20px #bd0000;
+    }
+    50% {
+        text-shadow: 0 0 10px #af2e2e, 0 0 20px #8e1212, 0 0 30px #ff0000;
+    }
+    100% {
+        text-shadow: none;
     }
 }
